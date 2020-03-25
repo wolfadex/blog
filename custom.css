@@ -1,0 +1,13 @@
+nav {
+  position: fixed;
+  padding: 0 1rem;
+}
+
+main {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.content {
+  max-width: 100rem;
+}
