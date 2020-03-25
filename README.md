@@ -1,2 +1,1 @@
-# blog
- My personal blog
+My personal blog https://wolfadex.github.io/blog/
