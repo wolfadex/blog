@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>The Toolshed</title>
+        <link>https://wolfadex.github.io/blog/posts</link>
+        <description>Musings on web development tools</description>
+        <lastBuildDate>Thu, 26 Mar 2020 02:46:40 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>Elmstatic</generator>
+        <language>en</language>
+        <image>
+            <title>The Toolshed</title>
+            <url>https://wolfadex.github.io/blog/img/logo.png</url>
+            <link>https://wolfadex.github.io/blog/posts</link>
+        </image>
+        <copyright>Copyright: T. Wolfgang Schuster</copyright>
+        <item>
+            <title><![CDATA[20 Years of Web]]></title>
+            <link>https://wolfadex.github.io/blog/posts/2020-03-25-20-years-of-web</link>
+            <guid>https://wolfadex.github.io/blog/posts/2020-03-25-20-years-of-web</guid>
+            <pubDate>Wed, 25 Mar 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[
+It occurred to me last night that I've been building websites, either professionally or as a hobby, for over 20 years now! I built my first website in a computer class in the 6th grade using nothing more than a text editor and trial & error. Things have come a long ways since then.
+
+In college I learned Macromedia Dreamweaver and Macromedia Flash. My first software job was all about Sublime Text 2 and ExtJS. Now when I mention most of those things I get looks of confusion.
+
+Everyone seems to be...]]></description>
+        </item>
+    </channel>
+</rss>

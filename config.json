@@ -1,0 +1,23 @@
+{
+  "siteTitle": "The Toolshed",
+  "outputDir": "docs",
+  "copy": {
+    "/posts": "/"
+  },
+  "feed": {
+    "type": "rss",
+    "title": "The Toolshed",
+    "description": "Musings on web development tools",
+    "id": "https://wolfadex.github.io/blog",
+    "link": "https://wolfadex.github.io/blog/posts",
+    "image": "https://wolfadex.github.io/blog/img/logo.png",
+    "copyright": "Copyright: T. Wolfgang Schuster",
+    "language": "en",
+    "generator": "Elmstatic",
+    "author": {
+      "name": "T. Wolfgang Schuster",
+      "link": "https://wolfadex.github.io/blog/about"
+    }
+  },
+  "tags": ["other", "software", "web", "development", "tech"]
+}
