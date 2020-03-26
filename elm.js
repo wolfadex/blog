@@ -5607,7 +5607,7 @@ var $elm$core$List$intersperse = F2(
 var $elm$core$String$toLower = _String_toLower;
 var $author$project$Post$tagsToHtml = function (tags) {
 	var tagLink = function (tag) {
-		return '/tags/' + $elm$core$String$toLower(tag);
+		return '/blog/tags/' + $elm$core$String$toLower(tag);
 	};
 	var linkify = function (tag) {
 		return A2(
@@ -5667,7 +5667,7 @@ var $author$project$Posts$main = function () {
 					$elm$html$Html$a,
 					_List_fromArray(
 						[
-							$elm$html$Html$Attributes$href('/' + post.cd)
+							$elm$html$Html$Attributes$href('/blog/' + post.cd)
 						]),
 					_List_fromArray(
 						[
