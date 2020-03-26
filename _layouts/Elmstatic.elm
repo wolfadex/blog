@@ -143,7 +143,7 @@ htmlTemplate title contentNodes =
             , script "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/highlight.min.js"
             , script "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/languages/elm.min.js"
             , inlineScript "hljs.initHighlightingOnLoad();"
-            , stylesheet "/mvp.css"
+            , stylesheet "/blog/mvp.css"
 
             -- , stylesheet "//fonts.googleapis.com/css?family=Open+Sans|Proza+Libre|Inconsolata"
             ]

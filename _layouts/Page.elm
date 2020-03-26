@@ -25,7 +25,7 @@ header =
     Html.header []
         [ h1 []
             [ text "The Toolshed"
-            , img [ src "/img/logo.svg", class "title-logo" ] []
+            , img [ src "/blog/img/logo.svg", class "title-logo" ] []
             ]
         , small [] [ text "Musings on web development tools" ]
         ]
@@ -50,18 +50,18 @@ layout title contentItems =
     [ header
     , nav
         []
-        [ a [ href "/posts" ]
+        [ a [ href "/blog/posts" ]
             [ text "Posts" ]
-        , a [ href "/about" ]
+        , a [ href "/blog/about" ]
             [ text "About" ]
-        , a [ href "/contact" ]
+        , a [ href "/blog/contact" ]
             [ text "Contact" ]
         ]
     , main_
         [ class "main-content" ]
         (h1 [] [ text title ] :: contentItems)
     , footer
-    , Elmstatic.stylesheet "/styles.css"
+    , Elmstatic.stylesheet "/blog/styles.css"
     ]
 
 

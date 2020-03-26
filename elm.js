@@ -5354,7 +5354,7 @@ var $author$project$Elmstatic$htmlTemplate = F2(
 							$author$project$Elmstatic$script('//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/highlight.min.js'),
 							$author$project$Elmstatic$script('//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/languages/elm.min.js'),
 							$author$project$Elmstatic$inlineScript('hljs.initHighlightingOnLoad();'),
-							$author$project$Elmstatic$stylesheet('/mvp.css')
+							$author$project$Elmstatic$stylesheet('/blog/mvp.css')
 						])),
 					A3($elm$html$Html$node, 'body', _List_Nil, contentNodes)
 				]));
@@ -5502,7 +5502,7 @@ var $author$project$Page$header = A2(
 					$elm$html$Html$img,
 					_List_fromArray(
 						[
-							$elm$html$Html$Attributes$src('/img/logo.svg'),
+							$elm$html$Html$Attributes$src('/blog/img/logo.svg'),
 							$elm$html$Html$Attributes$class('title-logo')
 						]),
 					_List_Nil)
@@ -5531,7 +5531,7 @@ var $author$project$Page$layout = F2(
 						$elm$html$Html$a,
 						_List_fromArray(
 							[
-								$elm$html$Html$Attributes$href('/posts')
+								$elm$html$Html$Attributes$href('/blog/posts')
 							]),
 						_List_fromArray(
 							[
@@ -5541,7 +5541,7 @@ var $author$project$Page$layout = F2(
 						$elm$html$Html$a,
 						_List_fromArray(
 							[
-								$elm$html$Html$Attributes$href('/about')
+								$elm$html$Html$Attributes$href('/blog/about')
 							]),
 						_List_fromArray(
 							[
@@ -5551,7 +5551,7 @@ var $author$project$Page$layout = F2(
 						$elm$html$Html$a,
 						_List_fromArray(
 							[
-								$elm$html$Html$Attributes$href('/contact')
+								$elm$html$Html$Attributes$href('/blog/contact')
 							]),
 						_List_fromArray(
 							[
@@ -5575,7 +5575,7 @@ var $author$project$Page$layout = F2(
 							])),
 					contentItems)),
 				$author$project$Page$footer,
-				$author$project$Elmstatic$stylesheet('/styles.css')
+				$author$project$Elmstatic$stylesheet('/blog/styles.css')
 			]);
 	});
 var $elm$html$Html$span = _VirtualDom_node('span');
