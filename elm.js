@@ -5551,6 +5551,16 @@ var $author$project$Page$layout = F2(
 						$elm$html$Html$a,
 						_List_fromArray(
 							[
+								$elm$html$Html$Attributes$href('/blog/projects')
+							]),
+						_List_fromArray(
+							[
+								$elm$html$Html$text('Projects')
+							])),
+						A2(
+						$elm$html$Html$a,
+						_List_fromArray(
+							[
 								$elm$html$Html$Attributes$href('/blog/contact')
 							]),
 						_List_fromArray(

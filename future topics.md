@@ -8,3 +8,4 @@
 - module splitting vs smaller builds
   - does module splitting impose the same social costs as 1 large file, e.g. one 5 mb file vs five 1 mb files
 - web _app_ vs web _site_
+- feedback

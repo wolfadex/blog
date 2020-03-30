@@ -54,6 +54,8 @@ layout title contentItems =
             [ text "Posts" ]
         , a [ href "/blog/about" ]
             [ text "About" ]
+        , a [ href "/blog/projects" ]
+            [ text "Projects" ]
         , a [ href "/blog/contact" ]
             [ text "Contact" ]
         ]
