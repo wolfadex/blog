@@ -30,3 +30,11 @@ I was able to get my dev env setup pretty quickly and was building my little tod
 So I went the easy route and copy/pasted the example one from Karax's repo with the goal to modify it. Sadly this didn't last too long as I hit error after error, finally giving up when I got this error `Error: expression 'filter(maybeTodos, isSome)' cannot be called` when trying to load my saved todos from localStorage.
 
 I also struggled with understanding how events work with Karax, which is what got me to skip to just copy/pasting their example in the first place. Nim's error messages just weren't helpful enough to get through the struggles either. I'll probably skip Karax for now and leave Nim for non-JavaSCript projects.
+
+### [Updated 2020-04-01]
+
+After publishing this post a friend contacted me and explained why I was getting that error, `Error: expression 'filter(maybeTodos, isSome)' cannot be called`. I had a variable `filter` defined up above from the copy/pasted code, so that one is one me. I figured it was only fair that I go back to the code and try a little harder, see if I can get a little further.
+
+I did manage to get a lot more working. My todos are now stored locally as a sequence of `Todo` objects (similar to a struct or a record) instead of storing the todo content, completed status, and id as separate values in localStorage and querying localStorage every time.
+
+I did eventually give up on finishing it as it felt like it was taking way too long to work with JS and Nim together. As I said originally, I'll probably leave Nim for non-JavaScript projects.
