@@ -4,7 +4,7 @@
         <title>The Toolshed</title>
         <link>https://wolfadex.github.io/blog/posts</link>
         <description>Musings on web development tools</description>
-        <lastBuildDate>Mon, 30 Mar 2020 03:43:12 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Apr 2020 01:44:05 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Elmstatic</generator>
         <language>en</language>
@@ -35,6 +35,32 @@ Everyone seems to be...]]></description>
 I decided to go ahead and test out various front end frameworks. I wanted to see what I can learn from them, what I enjoy, and what I find difficult. For each I'll be building a basic Todo app that stores values in localStorage, and a Quiz app that stores scores in localStorage. If you'd like to see the code, it'll be available ay github.com/wolfadex/framework-comparison.
 
 The Todo app is just for learning the framework and getting used to it. The Quiz app will be for something a little more in...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Frameworks Comparison - Part 2 - Nim + Karax]]></title>
+            <link>https://wolfadex.github.io/blog/posts/2020-03-31-frameworks-part-2-nim-karax</link>
+            <guid>https://wolfadex.github.io/blog/posts/2020-03-31-frameworks-part-2-nim-karax</guid>
+            <pubDate>Tue, 31 Mar 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[
+Next up in frameworks is Karax which is written in Nim. A small snippet of what Karax for those who are interested:
+
+include karax / prelude
+
+var lines: seq[kstring] = @[]
+
+proc createDom(): VNode =
+  result = buildHtml(tdiv):
+    button:
+      text "Say hello!"
+      proc onclick(ev: Event; n: VNode) =
+        lines.add "Hello simulated universe"
+    for x in lines:
+      tdiv:
+        text x
+
+setRenderer createDom
+
+Now I've written some Nim before. I did the first couple Advent of Code 2020 i...]]></description>
         </item>
     </channel>
 </rss>
