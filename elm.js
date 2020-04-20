@@ -5299,6 +5299,7 @@ var $author$project$Elmstatic$inlineScript = function (js) {
 				$elm$html$Html$text(js)
 			]));
 };
+var $elm$html$Html$Attributes$rel = _VirtualDom_attribute('rel');
 var $author$project$Elmstatic$script = function (src) {
 	return A3(
 		$elm$html$Html$node,
@@ -5321,6 +5322,7 @@ var $author$project$Elmstatic$stylesheet = function (href) {
 			]),
 		_List_Nil);
 };
+var $elm$html$Html$Attributes$type_ = $elm$html$Html$Attributes$stringProperty('type');
 var $author$project$Elmstatic$htmlTemplate = F2(
 	function (title, contentNodes) {
 		return A3(
@@ -5349,6 +5351,16 @@ var $author$project$Elmstatic$htmlTemplate = F2(
 							_List_fromArray(
 								[
 									A2($elm$html$Html$Attributes$attribute, 'charset', 'utf-8')
+								]),
+							_List_Nil),
+							A3(
+							$elm$html$Html$node,
+							'link',
+							_List_fromArray(
+								[
+									$elm$html$Html$Attributes$rel('alternate'),
+									$elm$html$Html$Attributes$type_('application/rss+xml'),
+									$elm$html$Html$Attributes$href('/blog/rss.xml')
 								]),
 							_List_Nil),
 							$author$project$Elmstatic$script('//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.1/highlight.min.js'),
@@ -5475,6 +5487,16 @@ var $author$project$Page$footer = A2(
 			_List_fromArray(
 				[
 					$elm$html$Html$text('Created with Elmstatic')
+				])),
+			A2(
+			$elm$html$Html$a,
+			_List_fromArray(
+				[
+					$elm$html$Html$Attributes$href('https://andybrewer.github.io/mvp/')
+				]),
+			_List_fromArray(
+				[
+					$elm$html$Html$text('Theme by MVP.css')
 				]))
 		]));
 var $elm$html$Html$h1 = _VirtualDom_node('h1');
@@ -5566,6 +5588,24 @@ var $author$project$Page$layout = F2(
 						_List_fromArray(
 							[
 								$elm$html$Html$text('Contact')
+							])),
+						A2(
+						$elm$html$Html$a,
+						_List_fromArray(
+							[
+								$elm$html$Html$Attributes$href('/blog/rss.xml'),
+								$elm$html$Html$Attributes$rel('alternate'),
+								$elm$html$Html$Attributes$type_('application/rss+xml')
+							]),
+						_List_fromArray(
+							[
+								A2(
+								$elm$html$Html$img,
+								_List_fromArray(
+									[
+										$elm$html$Html$Attributes$src('/blog/img/feed-icon-28x28.png')
+									]),
+								_List_Nil)
 							]))
 					])),
 				A2(

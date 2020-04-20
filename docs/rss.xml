@@ -4,7 +4,7 @@
         <title>The Toolshed</title>
         <link>https://wolfadex.github.io/blog/posts</link>
         <description>Musings on web development tools</description>
-        <lastBuildDate>Wed, 01 Apr 2020 21:07:23 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 20 Apr 2020 15:22:14 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Elmstatic</generator>
         <language>en</language>
@@ -61,6 +61,16 @@ proc createDom(): VNode =
 setRenderer createDom
 
 Now I've written some Nim before. I did the first couple Advent of Code 2020 i...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Framework Agnostic Localization]]></title>
+            <link>https://wolfadex.github.io/blog/posts/2020-04-20-framework-agnostic-localization</link>
+            <guid>https://wolfadex.github.io/blog/posts/2020-04-20-framework-agnostic-localization</guid>
+            <pubDate>Mon, 20 Apr 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[
+Across my various web projects, adding localization has always required learning how to use my current framework's popular localization library. It was always frustrating having to learn a new library to get the same localization files on the screen. I assumed I was the only one having this problem so I went about my work accepting it as fact. Recently though I began hearing of others having the same struggle, and it finally came to me. Web components!
+
+At the same time I was also reading about...]]></description>
         </item>
     </channel>
 </rss>

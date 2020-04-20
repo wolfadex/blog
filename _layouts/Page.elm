@@ -42,6 +42,8 @@ footer =
             [ text "LinkedIn" ]
         , a [ href "https://www.npmjs.com/package/elmstatic" ]
             [ text "Created with Elmstatic" ]
+        , a [ href "https://andybrewer.github.io/mvp/" ]
+            [ text "Theme by MVP.css" ]
         ]
 
 
@@ -58,6 +60,15 @@ layout title contentItems =
             [ text "Projects" ]
         , a [ href "/blog/contact" ]
             [ text "Contact" ]
+        , a
+            [ href "/blog/rss.xml"
+            , Html.Attributes.rel "alternate"
+            , Html.Attributes.type_ "application/rss+xml"
+            ]
+            [ img [ src "/blog/img/feed-icon-28x28.png" ] []
+            ]
+
+        -- <a rel="alternate" type="application/rss+xml" href="http://example.com/feed">...</a>
         ]
     , main_
         [ class "main-content" ]
