@@ -3,6 +3,8 @@ title: Framework Agnostic Localization
 tags: web development localization
 ---
 
+[Updated on 2020-05-08: Changed example to match current release.]
+
 Across my various web projects, adding localization has always required learning how to use my current framework's popular localization library. It was always frustrating having to learn a new library to get the same localization files on the screen. I assumed I was the only one having this problem so I went about my work accepting it as fact. Recently though I began hearing of others having the same struggle, and it finally came to me. Web components!
 
 At the same time I was also reading about [Fluent](https://projectfluent.org/), a more modern approach to localization.
@@ -16,7 +18,7 @@ The bare minimum to get `Hello, World!` on the screen is:
 1. Install `@wolfadex/fluent-web` and `@fluent/bundle`
 1. Add a `fluent-text` web component to your html
    ```html
-   <fluent-text id="my-hello" messageId="hello"></fluent-text>
+   <fluent-text id="my-text-element" messageid="hello"></fluent-text>
    ```
 1. Build a resource, and add it to your component
 
@@ -28,9 +30,10 @@ The bare minimum to get `Hello, World!` on the screen is:
    hello = Hello, Fluent!
    `);
    const bundle = new FluentBundle("en-US");
-   bundle.addResource(resource);
+   bundles.addResource(resource);
 
-   const textEl = document.getElementById("my-hello");
+   const textEl = document.getElementById("my-text-element");
+
    textEl.bundles = [bundle];
    ```
 
